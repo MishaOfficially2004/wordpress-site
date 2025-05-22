@@ -1,0 +1,54 @@
+.card{
+    text-align: center;
+}
+.head
+{
+    background-color: turquoise;
+}
+footer{
+    background-color:turquoise; /* Black background color */
+   position: fixed; /* Make it stick/fixed */
+   font-size: 15px;
+   width: 100%; /* Full width */
+   bottom: 0;
+   border: 1px solid black;
+    max-height: 200px
+}
+
+#fot{
+   display: flex;
+   flex-direction: row;
+}
+
+.social{
+   height: 100px;
+   width: 100px;
+   margin: 50 50 50 50;
+}
+
+/* Светлая тема по умолчанию */
+body {
+    background-color: lightblue;
+    color: #000000;
+    padding-bottom: 200px;
+}
+
+/* Темная тема */
+body.dark-theme {
+    background-color: darkblue;
+    color: #ffffff;
+}
+
+#bask{
+    animation: 3s infinite alternate slidein;
+}
+
+@keyframes slidein {
+  from {
+    font-size: 15px;
+  }
+
+  to {
+    font-size: 20px;
+  }
+}

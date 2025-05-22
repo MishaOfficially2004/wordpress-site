@@ -1,0 +1,150 @@
+
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body data-bs-theme="dark">
+    <div>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Магаз оружия</title>
+ 
+        <link href="style.css" rel="stylesheet">
+
+    </head>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="magaz.html">Магаз</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="carusel.html">Страница мемов<span class="sr-only"></span></a>
+                </li>
+            </ul>
+        </div>
+        <a class="navbar-brand" href="basket.html" id="bask">Корзина</a>
+        <div class="form-check form-switch">
+            <input class="form-check-input" id="checked" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label text-dark" for="flexSwitchCheckDefault">Смена темы оформления страницы</label>  
+          </div>
+          <script src="script.js"></script>
+    </nav>
+    
+    
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-md-6 col-sm-12">
+       <div class="card" style="width: 18rem;">
+          <img src="1.jpg" alt="Изображение товара" class="card-img w-100 img-thumbnail card-img-top" data-bs-toggle="modal" data-bs-target="#productModal">
+              <div class="card-body">
+                <h5 class="card-title">Пневматическая винтовка</h5>
+                <p class="card-text">5000 рублей</p>
+                <button data-id="1" data-name="Пневматическая винтовка" data-price="5000 рублей" onclick="addToCart(this)" class="btn btn-primary">Добавить в корзину</button>
+          </div>
+        </div>
+       <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-light"> <!-- Добавлен класс bg-light -->
+                  <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="productModalLabel">Пневматическая винтовка</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="1.jpg" class="img-fluid">
+                  </div>
+                  <div class="modal-footer">
+                   <p class="card-text">5000 рублей</p>
+                    <a href="1.html"><button type="button" class="btn btn-secondary">Подробнее о товаре</button></a>
+                    <button data-id="1" data-name="Пневматическая винтовка" data-price="5000 рублей" onclick="addToCart(this)" class="btn btn-primary">Добавить в корзину</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            
+   <div class="col-xl-4 col-md-6 col-sm-12">
+      <div class="card" style="width: 18rem;">
+          <img src="2.jpg" alt="Изображение товара" class="card-img w-100 img-thumbnail card-img-top" data-bs-toggle="modal" data-bs-target="#productModal1">
+              <div class="card-body">
+                <h5 class="card-title">Динамит</h5>
+                <p class="card-text">2500 рублей</p>
+                <button data-id="2" data-name="Динамит" data-price="2500 рублей" onclick="addToCart(this)" class="btn btn-primary">Добавить в корзину</button>
+          </div>
+        </div>       
+       <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-light"> <!-- Добавлен класс bg-light -->
+                  <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="productModalLabel">Динамит</h5>
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="2.jpg" class="img-fluid">
+                  </div>
+                  <div class="modal-footer">
+                   <p class="card-text">2500 рублей</p>
+                    <a href="2.html"><button type="button" class="btn btn-secondary">Подробнее о товаре</button></a>
+                    <button data-id="2" data-name="Динамит" data-price="2500 рублей" onclick="addToCart(this)" class="btn btn-primary">Добавить в корзину</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+         
+        </div>   
+  <div class="col-xl-4 col-md-6 col-sm-12">
+        
+      <div class="card" style="width: 18rem;">
+          <img src="3.jpg" alt="Изображение товара" class="card-img w-100 img-thumbnail card-img-top" data-bs-toggle="modal" data-bs-target="#productModal2">
+              <div class="card-body">
+                <h5 class="card-title">Катана</h5>
+                <p class="card-text">4000 рублей</p>
+                <button data-id="3" data-name="Катана" data-price="4000 рублей" onclick="addToCart(this)" class="btn btn-primary">Добавить в корзину</button>
+          </div>
+        </div>       
+       <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-light"> <!-- Добавлен класс bg-light -->
+                  <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="productModalLabel">Катана</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="3.jpg" class="img-fluid">
+                  </div>
+                  <div class="modal-footer">
+                   <p class="card-text">4000 рублей</p>
+                    <a href="3.html"><button type="button" class="btn btn-secondary">Подробнее о товаре</button></a>
+                    <button data-id="3" data-name="Катана" data-price="4000 рублей" onclick="addToCart(this)" class="btn btn-primary">Добавить в корзину</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+</div>       
+        </div>
+        </div>
+    <footer>
+        <p>Это подвал. Здесь ссылки, которые никуда не приведут</p>
+       <div class="container-fluid">
+       <div class="row">
+        <div class="col-1">
+           
+                <a href="https://vk.com/"><img class ="Social" src="Vk.jpg"></a>
+        </div>
+               <div class="col-3">
+           <a href="https://web.telegram.org/a/"><img class ="Social" src="tg.png"></a>
+           </div>        
+        
+        </div>
+        </div>
+</footer>
+</div>
+<script src="script.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
+</body>
